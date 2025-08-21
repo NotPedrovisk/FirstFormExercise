@@ -1,0 +1,64 @@
+:root{
+    --custom-font: 1rem sans-serif
+}
+
+
+body{
+    /*centers form on page */
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    /* form outline */
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+}
+
+p + p{
+    margin-top: 1rem;
+}
+
+label{
+    /* uniform size and alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input, textarea{
+    /* makes sure all text fields have same font settings */
+    font: var(--custom-font);
+    /* uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* match form borders */
+    border: 1px solid #999999;
+
+}
+
+input:focus,textarea:focus{
+    /* sets outline widht and stile */
+    outline-style: solid;
+    /* gives a little highlight on active element */
+    outline-color: purple;
+}
+
+textarea{
+    /* aligns multilne text field with their label */
+    vertical-align: top;
+    /* provides space for some text */
+    height: 5rem;
+}
+
+.button{
+    /* aligns buttons with the text field */
+    padding-left: 90px;
+}
+
+button{
+    /* extra margin represents roughly the same space as the space beteween labels
+    and theirnm text fields */
+    margin-left: 0.5rem;
+}
